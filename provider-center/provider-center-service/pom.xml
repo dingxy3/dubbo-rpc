@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>provider-center</artifactId>
+        <groupId>dubbo-test</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>provider-center-service</artifactId>
+<dependencies>
+    <!--添加dubbo配置-->
+    <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.6.0</version>
+    </dependency>
+
+    <!--依赖api接口工程,需要实现api里面的接口-->
+    <dependency>
+        <groupId>dubbo-test</groupId>
+        <artifactId>provider-center-api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.101tec</groupId>
+        <artifactId>zkclient</artifactId>
+        <version>0.9</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>4.3.14.RELEASE</version>
+    </dependency>
+</dependencies>
+
+</project>
