@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>dubbo-test</groupId>
     <artifactId>provider-center</artifactId>
     <packaging>pom</packaging>
     <modules>
