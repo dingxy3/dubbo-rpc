@@ -1,7 +1,7 @@
 package com.provider.dubbo.impl;
 
 import com.alibaba.dubbo.rpc.RpcContext;
-import com.interfaces.DemoService;
+import com.dubbo.interfaces.DemoService;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

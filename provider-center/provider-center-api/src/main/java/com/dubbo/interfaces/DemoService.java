@@ -1,4 +1,4 @@
-package com.interfaces;
+package com.dubbo.interfaces;
 
 /**
  * @version [版本号, 2018/9/12]

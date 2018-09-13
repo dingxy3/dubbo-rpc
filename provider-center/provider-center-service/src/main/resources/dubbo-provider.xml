@@ -18,7 +18,7 @@
 
     <!--把接口和实现类绑定，并且注册到zookeeper,便于调用者调服务时通过接口发现实现类-->
     <bean id="demoService" class="com.provider.dubbo.impl.DemoServiceImpl"/>
-    <dubbo:service interface="com.interfaces.DemoService" ref="demoService"/>
+    <dubbo:service interface="com.dubbo.interfaces.DemoService" ref="demoService"/>
 
     <!-- 暴露dubbo服务的方式一-->
     <!-- 使用注解方式暴露接口，会自动扫描package下所有包中dubbo相关的注解，这样就不用在xml中再针对每个服务接口配置dubbo:service interface-->

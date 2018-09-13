@@ -1,6 +1,6 @@
-package com.dubbo.impl;
+package com.consumer.dubbo.impl;
 
-import com.interfaces.DemoService;
+import com.dubbo.interfaces.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
