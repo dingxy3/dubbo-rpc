@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.exception;
+package utils.exception;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 /**
  * Created by fangyunfeng on 2017/4/17.

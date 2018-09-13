@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>dubbo-test</groupId>
     <artifactId>common-center</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>common-api</module>
+    </modules>
 
 
 </project>

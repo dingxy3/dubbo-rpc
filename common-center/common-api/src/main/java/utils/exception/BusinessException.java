@@ -1,10 +1,10 @@
-package com.ai.rai.interests.common.exception;
+package utils.exception;
 
-import com.ai.rai.interests.common.utils.LocaleUtil;
-import com.ai.rai.interests.common.utils.ResourceMsgUtil;
-import com.ai.rai.interests.common.utils.ThreadId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utils.LocaleUtil;
+import utils.ResourceMsgUtil;
+import utils.ThreadId;
 
 /**
  * @author yafei

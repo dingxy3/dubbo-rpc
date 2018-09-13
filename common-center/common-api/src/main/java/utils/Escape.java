@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 /**
  * JavaScript escape/unescape 编码的 Java 实现

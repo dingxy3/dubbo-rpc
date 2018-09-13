@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 

@@ -1,21 +1,27 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
-import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.ai.rai.interests.common.Constant.GlobalConstant;
-import com.ai.rai.interests.common.exception.BusinessException;
 import org.springframework.http.HttpEntity;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import utils.constant.GlobalConstant;
+import utils.exception.BusinessException;
 
-//import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+//import javax.servlet.http.HttpServletRequest;
 
 /**
  * 系统级工具类

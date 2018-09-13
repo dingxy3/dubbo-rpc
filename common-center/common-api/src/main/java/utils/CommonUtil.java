@@ -1,4 +1,7 @@
-package com.ai.rai.interests.common.utils;
+package utils;
+
+
+import utils.exception.BusinessException;
 
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
@@ -13,12 +16,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
 
-import com.ai.rai.interests.common.exception.BusinessException;
-
-
 
 /**
- * @author gejun
+ * @author dingxy
  * @ClassName: CommonUtil
  * @Description: 微支付 公共类
  */

@@ -1,4 +1,8 @@
-package com.ai.rai.interests.common.utils;
+package utils;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;
@@ -11,10 +15,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.util.StringUtils;
 
 public class DateUtils
 {
@@ -378,7 +378,7 @@ public class DateUtils
         {
             return null;
         }
-        List<Date> list = new ArrayList<>(Math.abs(n) + 1);
+        List<Date> list = new ArrayList<Date>(Math.abs(n) + 1);
 
         if (n == 0)
         {
@@ -758,32 +758,32 @@ public class DateUtils
      * @param date
      * @return
      */
-    public static java.util.Date getDateOfBegin(java.util.Date date){
+    public static Date getDateOfBegin(Date date){
     	Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.set(Calendar.HOUR_OF_DAY, 0);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
-    	
-        java.util.Date result = new java.util.Date(calendar.getTimeInMillis());
+
+        Date result = new Date(calendar.getTimeInMillis());
         return result;
     }
-    
+
     /**
      * 获取时间（加上23:59:59）
      * @param date
      * @return
      */
-    public static java.util.Date getDateOfEnd(java.util.Date date){
+    public static Date getDateOfEnd(Date date){
     	Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.set(Calendar.HOUR_OF_DAY, 23);
         calendar.set(Calendar.MINUTE, 59);
         calendar.set(Calendar.SECOND, 59);
         calendar.set(Calendar.MILLISECOND, 0);
-    	
-        java.util.Date result = new java.util.Date(calendar.getTimeInMillis());
+
+        Date result = new Date(calendar.getTimeInMillis());
         return result;
     }
 

@@ -1,9 +1,4 @@
-package com.ai.rai.interests.common.utils.holder;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package utils.holder;
 
 import com.ai.rai.interests.common.utils.GloubFunc;
 import org.slf4j.Logger;
@@ -17,6 +12,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 用于持有spring的applicationContext,一个系统只能有一个ApplicationContextHolder <br />

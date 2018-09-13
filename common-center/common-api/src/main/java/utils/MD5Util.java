@@ -1,11 +1,11 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 import java.security.MessageDigest;
 
 /**
  * MD5加密
  *
- * @author gejun
+ * @author dingxy
  */
 public class MD5Util
 {

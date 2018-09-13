@@ -1,4 +1,4 @@
-package com.ai.rai.interests.common.utils;
+package utils;
 
 import com.ai.rai.interests.common.base.FieldName;
 import com.ai.rai.interests.common.exception.BusinessException;

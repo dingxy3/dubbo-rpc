@@ -2,6 +2,7 @@ package com.provider.dubbo.impl;
 
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.dubbo.interfaces.DemoService;
+import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
  * @Description:
  * @since [产品/模块版本]
  */
+@Service
 public class DemoServiceImpl implements DemoService {
 
     public String sayHello(String name) {
