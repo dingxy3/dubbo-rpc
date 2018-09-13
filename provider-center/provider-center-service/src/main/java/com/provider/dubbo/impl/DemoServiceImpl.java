@@ -1,4 +1,4 @@
-package com.dubbo.impl;
+package com.provider.dubbo.impl;
 
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.interfaces.DemoService;

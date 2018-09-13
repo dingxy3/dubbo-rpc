@@ -17,7 +17,7 @@
     <dubbo:protocol name="dubbo" port="20880"/>
 
     <!--把接口和实现类绑定，并且注册到zookeeper,便于调用者调服务时通过接口发现实现类-->
-    <bean id="demoService" class="com.dubbo.impl.DemoServiceImpl"/>
+    <bean id="demoService" class="com.provider.dubbo.impl.DemoServiceImpl"/>
     <dubbo:service interface="com.interfaces.DemoService" ref="demoService"/>
 
     <!-- 暴露dubbo服务的方式一-->

@@ -42,10 +42,10 @@ consumer-center部署在另外B机器上。
 1、	查看zookeeper下节点，
 发现多出一个dubbo；
 继续查看dubbo发现多出com.interfaces.DemoService节点：
-![zk-pic](/image/zk1.png)
+![zk-pic](/docs/image/zk1.png)
 2、	继续查看com.interfaces.DemoService节点，发现下面有[consumers, configurators, routers, providers]这些节点
 继续查看providers就是我们的服务提供方，发现这个节点下的节点就是
 我们接口注册的服务请求地址方法信息
 
-![zk-pic1](/image/zk2.png)
+![zk-pic1](/docs/image/zk2.png)
 

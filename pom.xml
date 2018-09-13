@@ -11,12 +11,14 @@
     <modules>
         <module>provider-center</module>
         <module>consumer-center</module>
+        <module>common-center</module>
     </modules>
 
     <properties>
         <alibaba.dubbo.version>2.6.0</alibaba.dubbo.version>
         <zkclient.101tec.version>0.9</zkclient.101tec.version>
         <spring.webmvc.version>4.3.14.RELEASE</spring.webmvc.version>
+        <spring-boot.version> 1.5.3.RELEASE</spring-boot.version>
     </properties>
 
     <dependencyManagement>
@@ -25,16 +27,34 @@
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
             <version>${alibaba.dubbo.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>${zkclient.101tec.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.webmvc.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
     </dependencyManagement>
